@@ -1,0 +1,4 @@
+LOSS RATIO — GENDER TESTS
+
+T-test p-value: 0.3618943414070056
+Mann-Whitney p-value: 0.6350800943780405
