@@ -24,6 +24,6 @@ jobs:
 
       - name: Run EDA script (smoke)
         run: |
-          python src/eda.py \
-            --input week3/data/raw/MachineLearningRating_v3.txt \
-            --output week3/data/processed/clean.csv
+  python notebooks/task_1_eda.py \
+    --input data/raw/MachineLearningRating_v3.txt \
+    --output data/processed/clean.csv
