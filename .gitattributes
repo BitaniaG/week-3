@@ -1,2 +1,4 @@
 data/raw/*.txt filter=lfs diff=lfs merge=lfs -text
 data/processed/*.csv filter=lfs diff=lfs merge=lfs -text
+data/raw/MachineLearningRating_v3.txt filter=lfs diff=lfs merge=lfs -text
+data/processed/clean_machinelearningrating.csv filter=lfs diff=lfs merge=lfs -text
