@@ -51,3 +51,58 @@ Clean separation of large data files from Git history
 1. Install DVC: `pip install dvc`
 2. Pull dataset: `dvc pull`
 3. Run notebooks in `notebooks/`
+
+
+Task 3 — A/B Hypothesis Testing
+
+Objective:
+Validate business hypotheses related to risk and profitability using statistical tests. The goal is to identify meaningful differences across provinces, postal codes, and genders, and provide actionable insights for ACIS.
+
+Hypotheses Tested:
+
+H₀₁: No risk difference across provinces
+
+H₀₂: No risk difference between postal codes
+
+H₀₃: No margin (profit) difference between postal codes
+
+H₀₄: No risk difference between male and female policyholders
+
+Metrics Used:
+
+Claim Frequency: Proportion of policies with ≥1 claim
+
+Claim Severity: Average claim amount for policies with claims
+
+Margin: Total premium minus total claims
+
+Statistical Tests Applied:
+
+Two-proportion Z-test (for claim frequency)
+
+t-test / ANOVA (for claim severity and margin)
+
+Diagnostic checks: Shapiro-Wilk test, Levene test
+
+Outputs:
+
+Computed KPIs for each group
+
+Hypothesis test results with p-values and decisions
+
+Programmatic summary table for all hypotheses
+
+Visualizations: bar plots, box plots, and violin plots for each group
+
+All figures saved in week-3/outputs
+
+Business Insights:
+
+Significant differences in claim frequency observed between certain provinces (e.g., Gauteng vs Western Cape)
+
+No significant differences in claim frequency, severity, or margin observed between postal codes or genders
+
+Provides guidance on potential premium adjustments or underwriting criteria
+
+Usage:
+Open the notebook notebooks/task_3_ab_tests.ipynb and run all cells to reproduce the analysis, summary table, and visualizations.

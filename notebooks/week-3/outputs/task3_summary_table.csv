@@ -1,0 +1,10 @@
+Hypothesis,Metric Tested,Test Used,p-value,Decision,Interpretation
+H0₁: No risk difference across provinces,Claim Frequency,Two-proportion z-test,5.662704557855501e-14,Reject H0,Gauteng has higher claim frequency than Western Cape.
+H0₁: No risk difference across provinces,Claim Severity,t-test,0.03059896049292002,Reject H0,Western Cape has slightly higher claim severity than Gauteng.
+H0₁: No risk difference across provinces,Margin,t-test,0.16359633510119226,Fail to reject H0,No significant difference in margin between provinces.
+H0₂: No risk difference between zip codes,Claim Frequency,Two-proportion z-test,0.05245247951876464,Fail to reject H0,No significant difference in claim frequency between Postal Codes 2000 and 122.
+H0₂: No risk difference between zip codes,Claim Severity,t-test,0.7002080007323607,Fail to reject H0,No significant difference in claim severity between Postal Codes 2000 and 122.
+H0₃: No margin difference between zip codes,Margin,t-test,0.24446241842452016,Fail to reject H0,No significant difference in margin between Postal Codes 2000 and 122.
+H0₄: No risk difference between men and women,Claim Frequency,Two-proportion z-test,0.8404941485359676,Fail to reject H0,No significant difference in claim frequency between male and female policyholders.
+H0₄: No risk difference between men and women,Claim Severity,t-test,0.5680286951630673,Fail to reject H0,No significant difference in claim severity between male and female policyholders.
+H0₄: No risk difference between men and women,Margin,t-test,0.8015464193501283,Fail to reject H0,No significant difference in margin between male and female policyholders.
