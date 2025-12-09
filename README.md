@@ -106,3 +106,66 @@ Provides guidance on potential premium adjustments or underwriting criteria
 
 Usage:
 Open the notebook notebooks/task_3_ab_tests.ipynb and run all cells to reproduce the analysis, summary table, and visualizations.
+
+Task 4 — Predictive Modeling
+
+This task focuses on building and evaluating machine-learning models to predict insurance claim severity and support data-driven premium optimization.
+
+🔍 Objectives
+
+Train multiple regression models on the processed dataset.
+
+Evaluate model performance using RMSE, MAE, and R².
+
+Identify key drivers of claim severity using SHAP interpretability.
+
+Generate advanced premium optimization outputs.
+
+🧠 Models Trained
+
+Linear Regression
+
+Decision Tree Regressor
+
+Random Forest Regressor
+
+XGBoost Regressor
+
+Random Forest achieved the best performance with an R² above 0.99, showing excellent predictive power.
+
+📊 Model Evaluation
+
+Each model was evaluated using:
+
+RMSE (Root Mean Squared Error)
+
+MAE (Mean Absolute Error)
+
+R² Score
+
+Results were consolidated into a comparison table to identify the best-performing model.
+
+🔍 Model Interpretability
+
+SHAP (SHapley Additive Explanations) was used to understand feature impact.
+Top features influencing predictions included:
+
+SumInsured
+
+TotalPremium
+
+PostalCode
+
+UnderwrittenCoverID
+
+cubiccapacity
+
+💡 Premium Optimization
+
+Using predicted:
+
+Claim probability
+
+Claim severity
+
+A technical premium and a final quoted premium were calculated to demonstrate how ML outputs support underwriting decisions.
